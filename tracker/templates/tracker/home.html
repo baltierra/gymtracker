@@ -1,0 +1,41 @@
+
+{% extends "tracker/base.html" %}
+{% block content %}
+<h3>Quick Entry</h3>
+<form method="get" class="mb-3">
+  <div class="row g-2">
+    <div class="col-auto">{{ day_form.day.label_tag }} {{ day_form.day }}</div>
+    <div class="col-auto"><button class="btn btn-outline-secondary btn-sm">Load</button></div>
+  </div>
+</form>
+<form method="post" class="table-responsive">{% csrf_token %}
+<table class="table table-sm align-middle">
+<thead><tr><th>Exercise</th><th>Weight (lbs)</th><th>Reps</th><th>Time (min)</th><th>Last</th><th>Suggested</th><th>Notes</th></tr></thead>
+<tbody>
+{% for it in items %}
+<tr>
+<td>{{ it.exercise.name }}</td>
+<td><input type="number" step="0.5" class="form-control form-control-sm" name="w_{{ it.exercise.id }}"></td>
+<td><input type="number" class="form-control form-control-sm" name="r_{{ it.exercise.id }}"></td>
+<td><input type="number" step="0.5" class="form-control form-control-sm" name="t_{{ it.exercise.id }}"></td>
+<td>
+{% if last[it.exercise.id] %}
+  {% if last[it.exercise.id].weight_lbs %}{{ last[it.exercise.id].weight_lbs }} x {% endif %}
+  {% if last[it.exercise.id].reps %}{{ last[it.exercise.id].reps }} reps{% endif %}
+  {% if last[it.exercise.id].time_min %}{{ last[it.exercise.id].time_min }} min{% endif %}
+{% else %}-{% endif %}
+</td>
+<td>
+{% with s=suggestions[it.exercise.id] %}
+  {% if s.weight %}{{ s.weight }}{% endif %}
+  {% if s.reps %}{% if s.weight %} × {% endif %}{{ s.reps }}{% endif %}
+{% endwith %}
+</td>
+<td><input type="text" class="form-control form-control-sm" name="n_{{ it.exercise.id }}" placeholder="{{ it.note }}"></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<button class="btn btn-primary">Save Workout</button>
+</form>
+{% endblock %}

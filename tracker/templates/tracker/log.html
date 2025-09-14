@@ -1,0 +1,13 @@
+
+{% extends "tracker/base.html" %}
+{% block content %}
+<h3>Recent Workouts</h3>
+{% for w in workouts %}
+<div class="card mb-3"><div class="card-header"><strong>{{ w.date }}</strong> — {{ w.day_label }}</div>
+<div class="card-body p-0"><table class="table table-sm mb-0">
+<thead><tr><th>Exercise</th><th>Weight</th><th>Reps</th><th>Time (min)</th><th>Volume</th><th>Note</th></tr></thead>
+<tbody>
+{% for s in w.sets.all %}<tr><td>{{ s.exercise.name }}</td><td>{{ s.weight_lbs|default:"" }}</td><td>{{ s.reps|default:"" }}</td><td>{{ s.time_min|default:"" }}</td><td>{{ s.volume }}</td><td>{{ s.note }}</td></tr>{% endfor %}
+</tbody></table></div></div>
+{% empty %}<p>No entries yet. Log your first workout from the <a href="/">Quick Entry</a> page.</p>{% endfor %}
+{% endblock %}

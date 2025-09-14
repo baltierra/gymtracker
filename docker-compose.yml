@@ -1,0 +1,32 @@
+
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    container_name: fittrack_web
+    volumes:
+      - dbdata:/app
+      - staticdata:/app/staticfiles
+    environment:
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_SETTINGS_MODULE=fittrack.settings
+    expose:
+      - "8000"
+    restart: unless-stopped
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    container_name: fittrack_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - staticdata:/static
+    depends_on:
+      - web
+    restart: unless-stopped
+volumes:
+  dbdata:
+  staticdata:

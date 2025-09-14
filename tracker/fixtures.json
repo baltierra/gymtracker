@@ -1,0 +1,775 @@
+[
+  {
+    "model": "tracker.exercise",
+    "pk": 1,
+    "fields": {
+      "name": "Barbell Bench Press",
+      "ex_type": "compound",
+      "default_sets": 4,
+      "reps_min": 6,
+      "reps_max": 8
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 2,
+    "fields": {
+      "name": "Incline Dumbbell Press",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 8,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 3,
+    "fields": {
+      "name": "Bench Dumbbell Chest Flies",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 4,
+    "fields": {
+      "name": "Dumbbell Overhead Press",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 8,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 5,
+    "fields": {
+      "name": "Dumbbell Upright Row",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 6,
+    "fields": {
+      "name": "Dumbbell Lateral Raises",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 7,
+    "fields": {
+      "name": "Assisted Dips",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 8,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 8,
+    "fields": {
+      "name": "Tricep Pushdowns",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 9,
+    "fields": {
+      "name": "Dumbbell Skull Crushers",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 10,
+    "fields": {
+      "name": "Barbell Squat",
+      "ex_type": "compound",
+      "default_sets": 4,
+      "reps_min": 6,
+      "reps_max": 8
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 11,
+    "fields": {
+      "name": "Leg Press",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 12,
+    "fields": {
+      "name": "Trap Bar Deadlift",
+      "ex_type": "compound",
+      "default_sets": 4,
+      "reps_min": 6,
+      "reps_max": 8
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 13,
+    "fields": {
+      "name": "Walking Lunges",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 14,
+    "fields": {
+      "name": "Goblet Squat",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 15,
+    "fields": {
+      "name": "Leg Extensions",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 16,
+    "fields": {
+      "name": "Calf Raises",
+      "ex_type": "isolation",
+      "default_sets": 4,
+      "reps_min": 15,
+      "reps_max": 20
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 17,
+    "fields": {
+      "name": "Cable Low Row",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 8,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 18,
+    "fields": {
+      "name": "Single Arm Kettlebell Row",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 19,
+    "fields": {
+      "name": "Lat Pulldown",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 20,
+    "fields": {
+      "name": "Straight Arm Pulldown",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 21,
+    "fields": {
+      "name": "Face Pulls",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 22,
+    "fields": {
+      "name": "Dumbbell Curls",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 23,
+    "fields": {
+      "name": "Forearm Curls",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 24,
+    "fields": {
+      "name": "Overhead Press (Dumbbells)",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 8,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 25,
+    "fields": {
+      "name": "Dumbbell Rows",
+      "ex_type": "compound",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 26,
+    "fields": {
+      "name": "Dumbbell Flys",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 12,
+      "reps_max": 15
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 27,
+    "fields": {
+      "name": "Curls + Pushdowns",
+      "ex_type": "isolation",
+      "default_sets": 3,
+      "reps_min": 10,
+      "reps_max": 12
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 28,
+    "fields": {
+      "name": "Romanian Deadlift",
+      "ex_type": "compound",
+      "default_sets": 4,
+      "reps_min": 8,
+      "reps_max": 10
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 29,
+    "fields": {
+      "name": "Row Machine (min)",
+      "ex_type": "cardio",
+      "default_sets": null,
+      "reps_min": null,
+      "reps_max": null
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 30,
+    "fields": {
+      "name": "Treadmill Incline Walk (min)",
+      "ex_type": "cardio",
+      "default_sets": null,
+      "reps_min": null,
+      "reps_max": null
+    }
+  },
+  {
+    "model": "tracker.exercise",
+    "pk": 31,
+    "fields": {
+      "name": "Bike (min)",
+      "ex_type": "cardio",
+      "default_sets": null,
+      "reps_min": null,
+      "reps_max": null
+    }
+  },
+  {
+    "model": "tracker.dayplan",
+    "pk": 1,
+    "fields": {
+      "day": "Monday (Push)"
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 101,
+    "fields": {
+      "plan": 1,
+      "exercise": 1,
+      "order": 1,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 102,
+    "fields": {
+      "plan": 1,
+      "exercise": 2,
+      "order": 2,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 103,
+    "fields": {
+      "plan": 1,
+      "exercise": 3,
+      "order": 3,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 104,
+    "fields": {
+      "plan": 1,
+      "exercise": 4,
+      "order": 4,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 105,
+    "fields": {
+      "plan": 1,
+      "exercise": 5,
+      "order": 5,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 106,
+    "fields": {
+      "plan": 1,
+      "exercise": 6,
+      "order": 6,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 107,
+    "fields": {
+      "plan": 1,
+      "exercise": 7,
+      "order": 7,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 108,
+    "fields": {
+      "plan": 1,
+      "exercise": 8,
+      "order": 8,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 109,
+    "fields": {
+      "plan": 1,
+      "exercise": 9,
+      "order": 9,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplan",
+    "pk": 2,
+    "fields": {
+      "day": "Tuesday (Legs)"
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 201,
+    "fields": {
+      "plan": 2,
+      "exercise": 10,
+      "order": 1,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 202,
+    "fields": {
+      "plan": 2,
+      "exercise": 11,
+      "order": 2,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 203,
+    "fields": {
+      "plan": 2,
+      "exercise": 12,
+      "order": 3,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 204,
+    "fields": {
+      "plan": 2,
+      "exercise": 13,
+      "order": 4,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 205,
+    "fields": {
+      "plan": 2,
+      "exercise": 14,
+      "order": 5,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 206,
+    "fields": {
+      "plan": 2,
+      "exercise": 15,
+      "order": 6,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 207,
+    "fields": {
+      "plan": 2,
+      "exercise": 16,
+      "order": 7,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplan",
+    "pk": 3,
+    "fields": {
+      "day": "Wednesday (Pull)"
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 301,
+    "fields": {
+      "plan": 3,
+      "exercise": 17,
+      "order": 1,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 302,
+    "fields": {
+      "plan": 3,
+      "exercise": 18,
+      "order": 2,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 303,
+    "fields": {
+      "plan": 3,
+      "exercise": 19,
+      "order": 3,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 304,
+    "fields": {
+      "plan": 3,
+      "exercise": 20,
+      "order": 4,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 305,
+    "fields": {
+      "plan": 3,
+      "exercise": 21,
+      "order": 5,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 306,
+    "fields": {
+      "plan": 3,
+      "exercise": 22,
+      "order": 6,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 307,
+    "fields": {
+      "plan": 3,
+      "exercise": 23,
+      "order": 7,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplan",
+    "pk": 4,
+    "fields": {
+      "day": "Thursday (Cardio)"
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 401,
+    "fields": {
+      "plan": 4,
+      "exercise": 29,
+      "order": 1,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 402,
+    "fields": {
+      "plan": 4,
+      "exercise": 30,
+      "order": 2,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 403,
+    "fields": {
+      "plan": 4,
+      "exercise": 31,
+      "order": 3,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplan",
+    "pk": 5,
+    "fields": {
+      "day": "Friday (Legs 2)"
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 501,
+    "fields": {
+      "plan": 5,
+      "exercise": 10,
+      "order": 1,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 502,
+    "fields": {
+      "plan": 5,
+      "exercise": 11,
+      "order": 2,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 503,
+    "fields": {
+      "plan": 5,
+      "exercise": 28,
+      "order": 3,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 504,
+    "fields": {
+      "plan": 5,
+      "exercise": 13,
+      "order": 4,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 505,
+    "fields": {
+      "plan": 5,
+      "exercise": 14,
+      "order": 5,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 506,
+    "fields": {
+      "plan": 5,
+      "exercise": 15,
+      "order": 6,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 507,
+    "fields": {
+      "plan": 5,
+      "exercise": 16,
+      "order": 7,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplan",
+    "pk": 6,
+    "fields": {
+      "day": "Saturday (Upper)"
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 601,
+    "fields": {
+      "plan": 6,
+      "exercise": 2,
+      "order": 1,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 602,
+    "fields": {
+      "plan": 6,
+      "exercise": 19,
+      "order": 2,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 603,
+    "fields": {
+      "plan": 6,
+      "exercise": 24,
+      "order": 3,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 604,
+    "fields": {
+      "plan": 6,
+      "exercise": 25,
+      "order": 4,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 605,
+    "fields": {
+      "plan": 6,
+      "exercise": 26,
+      "order": 5,
+      "note": ""
+    }
+  },
+  {
+    "model": "tracker.dayplanexercise",
+    "pk": 606,
+    "fields": {
+      "plan": 6,
+      "exercise": 27,
+      "order": 6,
+      "note": ""
+    }
+  }
+]

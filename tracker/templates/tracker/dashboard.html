@@ -1,0 +1,22 @@
+
+{% extends "tracker/base.html" %}
+{% block content %}
+<h3>Dashboard</h3>
+<div class="row"><div class="col-lg-12"><canvas id="strengthChart"></canvas></div></div>
+<div class="row mt-4">
+  <div class="col-lg-6"><canvas id="cardioChart"></canvas></div>
+  <div class="col-lg-6"><canvas id="volumeChart"></canvas></div>
+</div>
+<h5 class="mt-4">PR Highlights (Most Recent)</h5>
+<table class="table table-sm">
+<thead><tr><th>Lift</th><th>Weight</th><th>Reps</th><th>When</th></tr></thead>
+<tbody>{% for p in prs %}<tr><td>{{ p.exercise }}</td><td>{{ p.weight|default:"-" }}</td><td>{{ p.reps|default:"-" }}</td><td>{{ p.when }}</td></tr>{% endfor %}</tbody>
+</table>
+<script>
+const labels={{ labels|safe }}; const squat={{ squat_series|safe }}; const rdl={{ rdl_series|safe }}; const bench={{ bench_series|safe }};
+const cardio={{ cardio_series|safe }}; const volume={{ volume_series|safe }};
+new Chart(document.getElementById('strengthChart'),{type:'line',data:{labels:labels,datasets:[{label:'Squat',data:squat},{label:'RDL',data:rdl},{label:'Bench',data:bench}]}});
+new Chart(document.getElementById('cardioChart'),{type:'line',data:{labels:labels,datasets:[{label:'Cardio Minutes',data:cardio}]}});
+new Chart(document.getElementById('volumeChart'),{type:'line',data:{labels:labels,datasets:[{label:'Total Volume',data:volume}]}});
+</script>
+{% endblock %}

@@ -1,0 +1,13 @@
+
+FROM python:3.11-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+RUN apt-get update && apt-get install -y build-essential && rm -rf /var/lib/apt/lists/*
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt && pip install gunicorn
+COPY . /app/
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
+ENV DJANGO_SETTINGS_MODULE=fittrack.settings
+RUN python manage.py collectstatic --noinput || true
+CMD gunicorn fittrack.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 90
